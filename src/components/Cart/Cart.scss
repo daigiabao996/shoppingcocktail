@@ -1,0 +1,104 @@
+  .cart-item {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-around;
+    line-height: 100px;
+    font-size: 1rem;
+    margin: 20px 0;
+    text-align: center;
+ 
+    img {
+      width: 100%;
+      height: 100px;
+    }
+
+    .cart-item__name {
+      color: rgb(224, 26, 26);
+      font-weight: 700;
+    }
+
+    .cart-item__price {
+      color: rgb(37, 194, 17);
+    }
+
+    .cart-item__quantity {
+
+      span {
+        padding: 0 10px;
+        font-size: 1.2rem;
+      }
+
+      button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 1.2rem;
+      }
+    }
+
+    .cart-item__total {
+      color: rgb(7, 104, 216);
+      font-weight: 700;
+    }
+
+    .cart-item__remove {
+      button {
+        border: none;
+        background: #ff5757;
+        padding: 10px;
+        border-radius: 10px;
+        color: #fff;
+        cursor: pointer;
+        &:hover {
+          background: #ca2727;
+        }
+      }
+    }
+  }
+
+  .totalPrice {
+    padding: 0 10%;
+    text-align: right;
+    margin-top: 50px;
+    .totalPrice-item {
+      color: rgb(38, 18, 155);
+      font-weight: 700;
+    }
+  }
+
+  .checkOut {
+    padding: 30px 10%;
+    text-align: right;
+    button {
+      cursor: pointer;
+      font-size: 1rem;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      background: rgb(38, 18, 155);
+      color: #fff;
+
+      &:hover {
+        background: rgb(18, 5, 77);
+      }
+    }  
+  }
+  .showNoti {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 30px 0;
+  }
+
+  
+
+@media only screen and (min-width: 768px) {
+    .cart-item {
+      grid-template-columns: 20% 30% 30%;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .cart-item {
+      grid-template-columns: 10% 20% 10% 20% 10% 10%;
+    }
+  }
